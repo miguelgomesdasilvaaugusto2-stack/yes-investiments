@@ -1,0 +1,144 @@
+/* 1° Section */
+.hero {
+  display: flex;
+  flex-flow: row wrap;
+  /* background: gray; */
+  place-items: center;
+}
+
+.artigo-bacana {
+  flex: 60%;
+  padding: 0 5%;
+  /* border: 1px solid black; */
+}
+
+.artigo-bacana h2 {
+  font-weight: 900;
+  font-size: 20px;
+  color: #083a02;
+  padding: 0;
+  margin: 0;
+}
+.chamativo {
+  font-size: 80px;
+  color: hwb(113 4% 19%);
+}
+.liberdade {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+#botao {
+  display: inline-block;
+  background: #118800;
+  margin-top: 20px;
+  padding: 10px 30px;
+  color: white;
+  border-radius: 5px;
+  border-bottom: none;
+  text-decoration: none;
+
+  transition:
+    opacity 0.5s ease,
+    transform 0.2s ease;
+}
+#botao:hover {
+  opacity: 0.7;
+  transform: translateY(-2px);
+}
+#botao:active {
+  transform: scale(0.9);
+}
+
+/* Imagem */
+
+.img-section {
+  display: flex;
+  flex: 40%;
+  /* border: 1px solid green; */
+
+  align-items: center;
+  justify-content: center;
+}
+
+/* 2° Section */
+
+.utilidades {
+  margin-top: 40px;
+  /* background: gray; */
+  /* border: 1px solid black; */
+  height: 600px;
+  text-align: center;
+  padding: 5%;
+  align-items: stretch;
+}
+.utilidades h2 {
+  width: 100%;
+  font-size: 50px;
+  margin: 0;
+  font-weight: 400;
+  font-family: "idiqlat", serif;
+}
+
+.lista-cards {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.card {
+  display: inline-block;
+  width: 30%;
+  padding: 20px;
+  margin: 3%;
+  border: 1px solid #0b5201;
+  border-radius: 25px;
+  cursor: pointer;
+  transition:
+    background 0.5s ease,
+    transform 0.3s ease,
+    box-shadow 1s ease;
+}
+.card:hover {
+  background: #083a02;
+  transform: translateY(-50px);
+  box-shadow: 0 15px 25px;
+}
+
+.conteudo-oculto {
+  display: none;
+  color: white;
+  max-height: 0px;
+  transition: max-height 10s ease;
+  overflow: hidden;
+}
+.card:hover .conteudo-oculto {
+  display: inline-block;
+  max-height: 500px;
+}
+.card:hover .principal {
+  display: none;
+}
+
+/* Aside */
+
+.depoimento {
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+  text-align: center;
+  margin: 40px auto;
+  border-radius: 8px;
+  border-left: 4px solid #118800;
+  border-bottom: 2px solid #118800;
+}
+#estrela {
+  margin-bottom: 8px;
+  color: yellow;
+}
+.depoimento-txt {
+  color: #374151;
+}
+.depoimento-autor {
+  color: #111827;
+  font-size: 0.9rem;
+}

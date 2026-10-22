@@ -1,0 +1,94 @@
+/* Texto padrão e Texto da Logo*/
+
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Idiqlat:wght@200;300;400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+#inicio {
+  scroll-margin-top: 100px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Header */
+
+.navbar {
+  /* background: gray; */
+  display: flex;
+  flex-flow: row wrap;
+  height: 100px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+  position: sticky;
+  top: 0;
+  background: white;
+  box-shadow: 0px 2px 10px;
+  z-index: 1000;
+}
+
+.logo {
+  margin: 0px;
+  flex: 20%;
+  /* border: 1px solid black; */
+  text-align: left;
+  font-family: "Bangers", system-ui;
+  font-size: 54px;
+  font-weight: 400px;
+  color: hwb(113 4% 19%);
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 25px;
+  flex: 70%;
+  /* border: 1px solid seagreen; */
+  text-align: right;
+  padding: 20px;
+}
+
+.menu a {
+  color: #118800;
+  text-decoration: none;
+  font-size: 20px;
+
+  border-bottom: 2px solid transparent;
+  transition:
+    border-color 0.3s ease,
+    transform 0.2s ease,
+    opacity 0.3s ease;
+}
+.menu a:hover {
+  border-color: #118800;
+}
+.menu a:active {
+  transform: scale(0.9);
+  opacity: 0.6;
+}
+
+/* Footer */
+
+footer {
+  height: 150px;
+  background-image: linear-gradient(180deg, #16bb00 30%, #118800 70%);
+  box-shadow: 0 0 25px #16bb00;
+  text-align: center;
+  color: white;
+  padding: 0;
+}
+
+#logo-footer {
+  text-align: center;
+  color: white;
+}

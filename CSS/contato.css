@@ -1,0 +1,98 @@
+.org-contato {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0 5%;
+}
+.org-contato footer {
+  margin: 0 -5%;
+  width: calc(100% + 10%);
+  margin-top: 50px;
+}
+
+.contato {
+  display: flex;
+  flex-flow: row wrap;
+  width: 40%;
+  gap: 10px;
+}
+.contato article {
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  background: #083a0286;
+  border: 3px solid #16bb00;
+  color: white;
+  border-radius: 15px;
+  gap: 15px;
+  place-items: center;
+}
+.contato a {
+  color: #111827;
+  background: #118800;
+  border-radius: 15px;
+  padding: 10px;
+  margin-bottom: 15px;
+  color: white;
+  text-decoration: none;
+
+  transition: transform 0.5s ease;
+}
+.contato a:hover {
+  transform: translateY(-2px);
+}
+.contato a:active {
+  transform: scale(0.7);
+}
+
+.extra {
+  display: flex;
+  flex-flow: column nowrap;
+  place-items: center;
+  padding: 20px;
+  width: 40%;
+  background: #11182769;
+  border: 3px solid #374151;
+  color: black;
+  border-radius: 15px;
+}
+.extra form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: flex-start;
+}
+.campo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.campo input,
+.campo select {
+  display: block;
+  border-radius: 5px;
+  background: #16bb00;
+  color: white;
+}
+.campo input {
+  outline: 3px solid transparent;
+  outline-offset: 0px;
+
+  transition:
+    outline-color 0.5s ease,
+    outline-offset 0.2s ease;
+}
+.campo input::placeholder {
+  color: white;
+}
+.campo input:focus {
+  outline-color: lightseagreen;
+}
+.campo input:active {
+  outline-offset: 5px;
+}
+
+#contatos {
+  font-size: 60px;
+  font-weight: bold;
+  color: #0b5201;
+}
