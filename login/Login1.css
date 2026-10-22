@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+
+h1 {
+  color: green;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+
+
+a {
+  -webkit-tap-highlight-color: transparent;
+  display: flex;
+  place-items: center;
+  padding: 20px;
+  width: 250px;
+  border-radius: 50px;
+  gap: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+
+
+
+.google {
+  background: black;
+  color: white;
+}
+.google:hover {
+  background-image: linear-gradient(45deg, black, gray);
+}
+.google:active {
+  transform: scale(0.90);
+}
+
+
+.outra {
+  font-weight: 400;
+  color: black;
+  background: gray;
+  transition: transform 0.2s;
+}
+.outra:hover {
+  background-image: linear-gradient(45deg, gray, black);
+  color: gray;
+}
+.outra:active {
+  transform: scale(0.90);
+}
+
+
+img {
+  height: 30px;
+  width: 30px;
+  border-radius: 20px;
+}
+
+
+#provedor {
+  display: inline-block;
+  text-align: center;
+  font-weight: 400;
+  font-size: 15px;
+  color: hwb(120 9% 33%);
+  transition: transform 1s, color 1s;
+}
+#provedor:hover {
+  color: hwb(120 34% 0%);
+}
+#provedor:active {
+  transform: scale(1.1);
+}

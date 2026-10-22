@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  color: green;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.login {
+  color: black;
+  border: 2px solid black;
+  background: white;
+  border-radius: 50px;
+  padding: 15px;
+  outline-color: 3px solid transparent;
+  outline-offset: 0px;
+  transition: outline-color 0.5s ease, outline-offset 0.2s ease;
+}
+.login::placeholder {
+  color: black;
+}
+.login:focus {
+  outline-color: lightseagreen;
+}
+.login:active {
+  outline-offset: 5px;
+}
+
+
+label {
+  font-size: 10px;
+  text-align: left;
+  font-weight: bold;
+}
+label:active + .login {
+  outline-offset: 5px;
+}
+
+input, label, a {
+  align-self: flex-start;
+}
+
+
+.button {
+  background: green;
+  text-decoration: none;
+  color: white;
+  padding: 25px;
+  border-radius: 25px;
+  width: 100%;
+  text-align: center;
+  font-size: larger;
+  font-weight: bold;
+  transition: background 0.5s ease, transform 0.2s ease;
+}
+.button:hover {
+  background: hwb(146 22% 19%);
+}
+.button:active {
+  transform: scale(0.95);
+}
+
+
+.redefinir {
+  text-align: left;
+  font-size: 15px;
+  color: #00760d;
+  text-decoration: none;
+  transition: color 1s ease, transform 0.2s ease;
+}
+.redefinir:hover {
+  color: hwb(120 16% 3%);
+}
+.redefinir:active {
+  font-weight: bold;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
