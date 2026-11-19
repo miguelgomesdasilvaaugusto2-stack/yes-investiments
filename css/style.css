@@ -97,6 +97,72 @@ body {
 }
 
 
+.hero {
+  display: flex;
+  place-items: center;
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  
+  flex: 60%;
+  
+  padding: 0 5%;
+}
+
+.hero__tittle {
+  display: flex;
+  flex-direction: column;
+
+  font-weight: 1000;
+  font-size: 20px;
+  color: #083a02;
+}
+.hero__tittle-highlight {
+  font-size: 80px;
+  color: #21cf0a;
+}
+.hero__tittle-text {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.hero__button {
+  display: inline-block;
+
+
+  text-align: center;
+  
+  border-radius: 5px;
+  border-bottom: none;
+
+  padding: 15px 10px;
+  
+  background: #118800;
+  color: #ffffff;
+  text-decoration: none;
+
+  transition:
+    opacity 0.5s ease,
+    transform 0.2s ease;
+}
+.hero__button:hover {
+  opacity: 0.7;
+  transform: translateY(-2px);
+}
+.hero__button:active {
+  transform: scale(0.9);
+}
+
+
+
+.hero__img {
+  display: none;
+  flex: 40%;
+}
+
 
 .default-footer {
   display: flex;
